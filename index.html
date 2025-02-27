@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .testimonial-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .rating {
+            color: gold;
+        }
+
+        .element {
+            background: url("bg-fon.jpg") center center / cover;
+            width: 100%;
+            height: 800px;
+        }
+
+        .search-box {
+            background: #fff;
+            border-radius: 50px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .search-box select,
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+        }
+
+        .search-box .search-btn {
+            background: #0056b3;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            border: none;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-box .search-btn:hover {
+            background: #4e657e;
+        }
+
+        img {
+            transition: 1s;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="element">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container mt-3">
+                <a class="navbar-brand fw-bold" href="#">DR.Malikov</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Bosh sahifa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Biz haqimizda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Xizmatlar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fikr-mulohazalar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bog‘lanish</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav><br><br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 col-sm-6 text-light">
+                    <h1 class="display-3"> Sog‘ligingiz bizning
+                        ustuvor vazifamizdir!</h1>
+                    <p>Dr. Amriddin Malikov bilan urologik sog'ligingizni yaxshilang. Biz sizga yuqori sifatli
+                        tibbiy xizmatlar, tajribali mutaxassislar va individual yondashuvni taklif qilamiz.
+                        Xizmatlarimiz haqida batafsil ma'lumot olish uchun sahifalarimizni kuzating va biz bilan
+                        bog'laning.</p>
+                </div>
+
+                <div class="col-lg-12 col-12 col-sm-6">
+                    <div class="search-box">
+                        <i class="fas fa-user-circle me-2"></i>
+                        <select class="form-select w-50">
+                            <option selected>Malikov Amriddin</option>
+                            <option>Mirzayev Ixtiyorbek</option>
+                            <option> Mirzayev Baxtiyorjon</option>
+                            <option>Norqo'ziyev Xayotjon</option>
+                        </select>
+                        <i class="fas fa-map-marker-alt ms-3 me-2"></i>
+                        <select class="form-select w-50">
+                            <option selected>Manzillar</option>
+                            <option>Toshkent</option>
+                            <option>Farg‘ona</option>
+                            <option>Namangan</option>
+                        </select>
+                        <button class="search-btn ms-3"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-12 col-sm-2  text-center text-light mt-3">
+                    <h1> 24/7</h1>
+                    <p>Ish vaqti faol</p>
+                </div>
+
+                <div class=" col-12 col-sm-2 text-center text-light mt-3 text-start">
+                    <h1>5000+</h1>
+                    <p>Muvaffaqiyatli <br> operatsiya</p>
+                </div>
+
+
+                <div class="col-12 col-sm-2 text-center text-light mt-3">
+                    <h1>5,5K+</h1>
+                    <p>faol kuzatuvchilar</p>
+                </div>
+                <a class="text-center col-12 col-sm-6  text-light mt-5 mb-3" href=""> Keyingi sahifa <i class="bi bi-arrow-right"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <br>
+        <h2 class="text-primary text-start">Xizmatlar</h2>
+        <br>
+        <div class="row mb-5">
+            <div class="col-12 col-sm-3 mb-5">
+                <div style="height: 430px;" class="card">
+                    <img class="m-auto" width="150px" height="150px" src="Group 296.png" alt=""><br>
+                    <h2 class="text-center"> Siydik-tosh <br> kasalligi davolash <br></h2>
+                    <p class="text-center">
+                        Siydik-tosh kasalligi (urolitiaz) <br> buyrakda, siydik pufagida va <br> siydik yo’llarida
+                        toshlar
+                        hosil <br> bo’lishi bilan xarakterlanadi.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3 mb-5">
+                <div style="height: 430px;" class="card">
+                    <img class="m-auto" width="150px" height="150px" src="Group 297.png" alt=""><br>
+                    <h2 class="text-center"> Prostata adenoma- <br>sini davolash <br></h2>
+                    <p class="text-center">
+                        Prostata adenomasini (benign <br> prostata giperplaziyasi) davolash <br> dori vositalari yoki
+                        jarrohlik <br> usullaridan foydalanishni o'z <br> ichiga oladi. </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3 mb-5">
+                <div style="height: 430px;" class="card">
+                    <img class="m-auto" width="150px" height="150px" src="Group 298.png" alt=""><br>
+                    <h2 class="text-center"> Buyrak raklarini <br> davolash <br></h2>
+                    <p class="text-center">
+                        Buyrak raklarini davolash ko'p hollarda jarrohlik amaliyotini o'z ichiga oladi, bu orqali
+                        o'simtani yoki butun buyrakni olmumkin.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3  mb-5">
+                <div style="height: 430px;" class="card">
+                    <img class="m-auto" width="150px" height="150px" src="Group 300.png" alt=""><br>
+                    <h2 class="text-center"> Prostata raklarini <br> davolash<br></h2>
+                    <p class="text-center">
+                        Prostata raklarini davolash turli usullarni o'z ichiga oladi: faqat kuzatish va monitoring,
+                        jarrohlik yo'li bilan prostata bezini olib tashlash, radioterapiya, va gormonal terapiya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <h1 class="text-primary display-2">Jarrohlik usullari</h1>
+                <p>Minimal invaziv jarrohlik usullari, jumladan endoskopik, laparoskopik va robot jarrohlik
+                    amaliyotlarini yuqori samaradorlik bilan bajaramiz. Bu usullar qisqa tiklanish davri va minimal
+                    asoratlar bilan ajralib turadi.</p>
+                <br><br>
+                <a class="text-center" href="#">Keyingi sahifa <i class="bi bi-arrow-right-short"></i> </a>
+                <br>
+            </div>
+            <div class="col-12 col-sm-6 mt-5 mb-2">
+                <img style="transform: scale(1);" class="card-img-top" src="Rectangle 15.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div style="background: #E1EEFF;" class="boel">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 mt-2">
+                    <h2 class="fw-bold">Bemorlardan fikr-mulohazalar</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+
+                <div class="col-12 col-sm-6 testimonial-container mt-2">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center">
+                            <img src="Ellipse 13.png" class="rounded-circle me-3" alt="User">
+                            <div>
+                                <h6 class="mb-0">A. Muhammedov</h6>
+                                <small class="text-muted">12/09/24</small>
+                            </div>
+                        </div>
+                        <p class="mt-3">Siydik-tosh kasalligi bilan og‘rigan edim. Operatsiyadan keyin o‘zimni yaxshi
+                            his qilyapman!</p>
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row  mt-5 mb-5">
+            <div class="col-12 col-md-6 col-sm-6">
+                <div class="card shadow p-4">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Ism*">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Familiya*">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email*">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number*">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Yozing..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Xabar yuborish</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 mt-5 mb-5">
+                <h1 class="display-3 text-center">Bog’lanish</h1>
+                <p style="margin-left: 35px;">Savollaringiz bormi? Quyidagi formani to‘ldiring yoki bizga qo‘ng‘iroq
+                    qiling. Biz sizga yordam berishga
+                    tayyormiz! Xizmatlar bo'lsa bemalol murojat qilamiz <br> <span>+99890 058 36 76</span>
+                </p>
+                <br>
+                <a style="margin-left: 35px;" class="text-center" href="#">Keyingi sahifa <i class="bi bi-arrow-right-short"></i> </a>
+            </div>
+        </div>
+    </div>
+
+
+ 
+    <div class="footer bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 mt-5 mb-2 text-center">
+                    <h3 class="text-light mb-5">Murojaat uchun: <br>
+                        Tel: +998 90 058 36 76
+                    </h3>
+                    <div class="d-inline-block">
+                        <i style="font-size: 25px;color: white;" class="bi bi-facebook p-2 "></i>
+                        <i style="font-size: 25px;color: white;" class="bi bi-instagram p-2 "></i>
+                        <i style="font-size: 25px;color: white;" class="bi bi-twitter p-2 "></i>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 mt-5 mb-2 text-light text-center">
+                    <h4>
+                        Ijtimoiy Tarmoqlar: <br>
+                    Instagram | Facebook | Telegram
+                    </h4>
+                    <br>
+                    <img style="transform: scale(1);width: 170px;height: 40px;" src="55.jpg" alt="">
+                </div>
+                <div class="col-12 col-sm-4 mt-5 mb-2 text-light  text-center">
+                    <h4>Manzillar:</h4>
+                    <img src="Rectangle 18.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
